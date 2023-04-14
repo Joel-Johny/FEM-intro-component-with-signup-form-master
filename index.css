@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}   
+
+body{
+    font-family: 'Poppins';
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url("./images/bg-intro-desktop.png");
+    object-fit: contain;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    padding:40px
+}
+
+/* ---------------------CARD 1 ------------------------------*/
+ .card1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    gap:2rem;
+
+}
+h1{
+    font-size: 2.5rem;
+}
+p{
+    font-size:16px
+}
+
+.title{
+    color: white;
+}
+
+/* ---------------------CARD 2 ------------------------------*/
+
+
+.card2{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 1.5rem;
+} 
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    padding: 2.5rem;
+    gap:1rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form>input{
+    border-radius: 5px;
+    height: 45px;
+    border-color:  gray;
+    width: 100%;
+    text-indent: 1.5rem;
+}
+.price{
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;  
+    font-weight: bold;
+    box-shadow: 0px 7px  rgba(0, 0, 0, 0.2);
+
+} 
+
+
+#submit{
+    background-color: hsl(154, 59%, 51%);  
+    height: 55px;
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+small{
+    color: hsl(246, 25%, 77%);
+}
+
+#tns{
+   color:  hsl(0, 100%, 74%)
+}
+
+.light{
+    font-weight:lighter;
+    margin-left: 3px;
+}
+@media screen and (max-width:875px) {
+    
+    .card-container{
+        flex-direction: column;
+    }
+    .card1,.card2{
+        width: 100%;
+
+    }
+    p,small,.price,.title{
+        text-align: center;
+    }
+
+}

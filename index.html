@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -16,27 +17,37 @@
 </head>
 <body>
 
-  Learn to code by watching others
+  <div class="card-container">
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+    <div class="card1">
+      <h1 class="title">Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+        
+    </div>
 
-  Try it free 7 days then $20/mo. thereafter
+  <div class="card2">
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+    <div class="price">Try it free 7 days <span class="light"> then $20/mo. thereafter</span></div>
+    <form class="form" onsubmit="validate()">
+      <input placeholder="First Name" required> 
+      <input placeholder="Last Name" required> 
+      <input placeholder="Email Address" required> 
+      <input placeholder="Password" type="password" required> 
+      
+    
+     <button type="submit" id="submit"> CLAIM YOUR FREE TRIAL </button> 
+    
+      <small>By clicking the button, you are agreeing to our <span id="tns"> Terms and Services</span></small>
+    </form>
 
-  Claim your free trial 
+    
+  </div>
 
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  </div>
+
+
+<script src="./script.js"></script>
+
 </body>
 </html>
