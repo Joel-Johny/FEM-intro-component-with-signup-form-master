@@ -74,8 +74,25 @@ p{
     background-color: white;
     border-radius: 10px;
 }
-
-.form>input{
+.form>div{
+    width: 100%;
+    position: relative;
+}
+.form>div>img{
+    position: absolute;
+    display: none;
+    right : 4%;
+    top : 18%;
+}
+.form>div>small{
+    margin-left: 55%;
+    color: hsl(0, 100%, 74%);
+    display: none;
+}
+.show{
+    display: block;
+}
+.form>div>input{
     border-radius: 5px;
     height: 45px;
     border-color:  gray;
@@ -118,6 +135,8 @@ small{
     font-weight:lighter;
     margin-left: 3px;
 }
+
+
 @media screen and (max-width:875px) {
     
     .card-container{
